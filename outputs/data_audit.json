@@ -1,0 +1,256 @@
+{
+  "shapes": {
+    "train": [
+      7485,
+      15
+    ],
+    "test": [
+      1872,
+      14
+    ],
+    "test_labels": [
+      1872,
+      2
+    ]
+  },
+  "columns": {
+    "train": [
+      "Date",
+      "Time",
+      "CO(GT)",
+      "PT08.S1(CO)",
+      "NMHC(GT)",
+      "C6H6(GT)",
+      "PT08.S2(NMHC)",
+      "NOx(GT)",
+      "PT08.S3(NOx)",
+      "NO2(GT)",
+      "PT08.S4(NO2)",
+      "PT08.S5(O3)",
+      "T",
+      "RH",
+      "AH"
+    ],
+    "test": [
+      "Date",
+      "Time",
+      "PT08.S1(CO)",
+      "NMHC(GT)",
+      "C6H6(GT)",
+      "PT08.S2(NMHC)",
+      "NOx(GT)",
+      "PT08.S3(NOx)",
+      "NO2(GT)",
+      "PT08.S4(NO2)",
+      "PT08.S5(O3)",
+      "T",
+      "RH",
+      "AH"
+    ],
+    "test_labels": [
+      "DateTime",
+      "CO(GT)"
+    ]
+  },
+  "dtypes": {
+    "train": {
+      "Date": "object",
+      "Time": "object",
+      "CO(GT)": "float64",
+      "PT08.S1(CO)": "float64",
+      "NMHC(GT)": "int64",
+      "C6H6(GT)": "float64",
+      "PT08.S2(NMHC)": "float64",
+      "NOx(GT)": "float64",
+      "PT08.S3(NOx)": "float64",
+      "NO2(GT)": "float64",
+      "PT08.S4(NO2)": "float64",
+      "PT08.S5(O3)": "float64",
+      "T": "float64",
+      "RH": "float64",
+      "AH": "float64"
+    },
+    "test": {
+      "Date": "object",
+      "Time": "object",
+      "PT08.S1(CO)": "float64",
+      "NMHC(GT)": "int64",
+      "C6H6(GT)": "float64",
+      "PT08.S2(NMHC)": "float64",
+      "NOx(GT)": "float64",
+      "PT08.S3(NOx)": "float64",
+      "NO2(GT)": "float64",
+      "PT08.S4(NO2)": "float64",
+      "PT08.S5(O3)": "float64",
+      "T": "float64",
+      "RH": "float64",
+      "AH": "float64"
+    }
+  },
+  "target": "CO(GT)",
+  "schema_differences": {
+    "train_only": [
+      "CO(GT)"
+    ],
+    "test_only": []
+  },
+  "date_ranges": {
+    "train": [
+      "2004-03-10 18:00:00",
+      "2005-01-16 14:00:00"
+    ],
+    "test": [
+      "2005-01-16 15:00:00",
+      "2005-04-04 14:00:00"
+    ]
+  },
+  "chronology": {
+    "train_ordered": true,
+    "test_ordered": true,
+    "strictly_separated": true,
+    "hourly_median_gap_train": "0 days 01:00:00",
+    "test_label_datetime_alignment": true
+  },
+  "ordinary_nulls": {
+    "train": {
+      "Date": 0,
+      "Time": 0,
+      "CO(GT)": 0,
+      "PT08.S1(CO)": 0,
+      "NMHC(GT)": 0,
+      "C6H6(GT)": 0,
+      "PT08.S2(NMHC)": 0,
+      "NOx(GT)": 0,
+      "PT08.S3(NOx)": 0,
+      "NO2(GT)": 0,
+      "PT08.S4(NO2)": 0,
+      "PT08.S5(O3)": 0,
+      "T": 0,
+      "RH": 0,
+      "AH": 0
+    },
+    "test": {
+      "Date": 0,
+      "Time": 0,
+      "PT08.S1(CO)": 0,
+      "NMHC(GT)": 0,
+      "C6H6(GT)": 0,
+      "PT08.S2(NMHC)": 0,
+      "NOx(GT)": 0,
+      "PT08.S3(NOx)": 0,
+      "NO2(GT)": 0,
+      "PT08.S4(NO2)": 0,
+      "PT08.S5(O3)": 0,
+      "T": 0,
+      "RH": 0,
+      "AH": 0
+    }
+  },
+  "sentinel_minus_200": {
+    "train": {
+      "CO(GT)": 1592,
+      "PT08.S1(CO)": 280,
+      "NMHC(GT)": 6571,
+      "C6H6(GT)": 280,
+      "PT08.S2(NMHC)": 280,
+      "NOx(GT)": 1581,
+      "PT08.S3(NOx)": 280,
+      "NO2(GT)": 1584,
+      "PT08.S4(NO2)": 280,
+      "PT08.S5(O3)": 280,
+      "T": 280,
+      "RH": 280,
+      "AH": 280
+    },
+    "test": {
+      "PT08.S1(CO)": 86,
+      "NMHC(GT)": 1872,
+      "C6H6(GT)": 86,
+      "PT08.S2(NMHC)": 86,
+      "NOx(GT)": 58,
+      "PT08.S3(NOx)": 86,
+      "NO2(GT)": 58,
+      "PT08.S4(NO2)": 86,
+      "PT08.S5(O3)": 86,
+      "T": 86,
+      "RH": 86,
+      "AH": 86
+    },
+    "test_labels_target": 91
+  },
+  "duplicate_rows": {
+    "train": 0,
+    "test": 0,
+    "test_labels": 0
+  },
+  "target_distribution_valid_only": {
+    "count": 5893.0,
+    "mean": 2.209061598506703,
+    "std": 1.4718446124659472,
+    "min": 0.1,
+    "25%": 1.1,
+    "50%": 1.9,
+    "75%": 3.0,
+    "max": 11.9
+  },
+  "top_absolute_target_correlations": {
+    "C6H6(GT)": 0.9378069711677373,
+    "PT08.S2(NMHC)": 0.9232524932510878,
+    "PT08.S1(CO)": 0.8930533378872295,
+    "NMHC(GT)": 0.8897341975741211,
+    "PT08.S5(O3)": 0.8712774573643921,
+    "NOx(GT)": 0.8012817553918504,
+    "NO2(GT)": 0.7830332724131985,
+    "PT08.S3(NOx)": 0.7133087965046486,
+    "PT08.S4(NO2)": 0.6654678354442192,
+    "RH": 0.07238997126254554
+  },
+  "largest_train_test_shifts": [
+    {
+      "feature": "PT08.S4(NO2)",
+      "standardized_mean_difference": 1.3607548208062927
+    },
+    {
+      "feature": "AH",
+      "standardized_mean_difference": 1.3476478523851563
+    },
+    {
+      "feature": "T",
+      "standardized_mean_difference": 1.2709503389736674
+    },
+    {
+      "feature": "NO2(GT)",
+      "standardized_mean_difference": 0.9476090609449306
+    },
+    {
+      "feature": "PT08.S2(NMHC)",
+      "standardized_mean_difference": 0.41612093972321507
+    },
+    {
+      "feature": "C6H6(GT)",
+      "standardized_mean_difference": 0.3628945409882072
+    },
+    {
+      "feature": "NOx(GT)",
+      "standardized_mean_difference": 0.3579514392581026
+    },
+    {
+      "feature": "PT08.S3(NOx)",
+      "standardized_mean_difference": 0.251406539687276
+    },
+    {
+      "feature": "RH",
+      "standardized_mean_difference": 0.07357888733357264
+    },
+    {
+      "feature": "PT08.S1(CO)",
+      "standardized_mean_difference": 0.03238961932530605
+    }
+  ],
+  "leakage_notes": [
+    "test_labels.csv is reserved for one final holdout evaluation and is never used for fitting or selection.",
+    "All learned imputation statistics are fitted inside each training fold or on the final training set.",
+    "No target-derived lag or rolling features are used.",
+    "Sensor readings are contemporaneous inputs, so this product is best described as CO estimation/nowcasting, not a future-horizon forecast."
+  ]
+}

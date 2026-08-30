@@ -1,0 +1,15 @@
+column_name,description,data_type
+Date,Date of the observation,Date
+Time,Time of the observation,Time
+CO(GT),True hourly average concentration of carbon monoxide (CO),Numeric
+PT08.S1(CO),Tin oxide sensor response associated with carbon monoxide,Numeric
+C6H6(GT),True hourly average concentration of benzene,Numeric
+PT08.S2(NMHC),Tin oxide sensor response associated with non-methane hydrocarbons,Numeric
+NOx(GT),True hourly average concentration of nitrogen oxides (NOx),Numeric
+PT08.S3(NOx),Tin oxide sensor response associated with nitrogen oxides,Numeric
+NO2(GT),True hourly average concentration of nitrogen dioxide (NO2),Numeric
+PT08.S4(NO2),Tin oxide sensor response associated with nitrogen dioxide,Numeric
+PT08.S5(O3),Tin oxide sensor response associated with ozone (O3),Numeric
+T,Temperature in degrees Celsius,Numeric
+RH,Relative humidity percentage,Numeric
+AH,Absolute humidity,Numeric

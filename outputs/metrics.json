@@ -1,0 +1,19 @@
+{
+  "winning_model": "Linear Regression",
+  "validation": {
+    "MAE": 0.4567201458230328,
+    "RMSE": 0.7250850003761959,
+    "R2": 0.816564527269907
+  },
+  "holdout": {
+    "MAE": 0.38239694150020304,
+    "RMSE": 0.588947422141538,
+    "R2": 0.8161665964886441
+  },
+  "evaluation_rows": {
+    "validation": 1179,
+    "holdout_valid": 1781,
+    "holdout_total": 1872
+  },
+  "feature_set": "Sensors + calendar"
+}
